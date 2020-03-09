@@ -1,0 +1,64 @@
+<html>
+  <title>All About Me</title>
+  <h1>All About Austin</h1>
+
+<p id="swi"></p>
+  <p id="gree"></p>
+  <img src="images/image for wvu.jpg" alt="home" height= "200" width= "200">
+<script>
+  var day;
+  var greeting;
+
+  switch(new Date().getDay()){
+    case 0:
+    day = "Sunday";
+    greeting = "Happy Sunday"
+    break;
+    case 1:
+    day = "Monday";
+    greeting = "Happy Monday"
+    break;
+    case 2:
+    day = "Tuesday";
+    greeting = "Taco Tuesday"
+    break;
+    case 3:
+    day = "Wednesday";
+    greeting = "Hump DAAAAAAYYYY YAAAA"
+    break;
+    case 4:
+    day = "Thursday";
+    greeting = "THIRSTY THURSDAY"
+    break;
+    case 5:
+    day = "Friday";
+    greeting = "FRIYAY"
+    break;
+    case 6:
+    day = "Saturday";
+    greeting = "Hump DAAAAAAYYYY YAAAA"
+    break;
+}
+  document.getElementById("swi").innerHTML = "Today is " + day;
+document.getElementById("gree").innerHTML = greeting;
+</script>
+
+<button onclick="fnBizRules()">Submit</button>
+<!--test-->
+<p id="bizrules"></p>
+<script>
+  <!-- Call Business Rules -->
+  function fnBizRules() {
+    var displayMsg = "";
+    var j = 0;
+    do {
+      displayMsg += "<br>The lucky number is " +j;
+      j++;
+    }
+    while (j < 11);
+      document.getElementById("bizrules").innerHTML = displayMsg;
+  }
+</script>
+
+
+</html>
